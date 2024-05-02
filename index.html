@@ -9,12 +9,12 @@
     
 </head>
 <body>
+    <h1 id="title"><center><b>calculator </b></center></h1>
+    <p id="description" >Task is calculator</p>
     <div class="container">
         <div class="calculator">
-           
-                
-                    <input type="text" name="display" placeholder="0" id="output-screen">
-                    <button onclick="cl()">cl</button>
+                    <input type="text" name="display" placeholder="0" id="result">
+                    <button onclick="cl()" id="clear">cl</button>
                     <button onclick="del()">Del</button>
                     <button onclick="display('%')">%</button>
                     <button onclick="display('/')">/</button>
@@ -25,18 +25,17 @@
                     <button onclick="display('4')">4</button>
                     <button onclick="display('5')">5</button>
                     <button onclick="display('6')">6</button>
-                    <button onclick="display('-')">-</button>
-                    <button onclick="display('1')">1</button>
-                    <button onclick="display('2')">2</button>
-                    <button onclick="display('3')">3</button>
-                    <button onclick="display('+')">+</button>
+                    <button onclick="display('-')" id="subtract">-</button>
+                    <button onclick="display('1')" id="1">1</button>
+                    <button onclick="display('2')" id="2">2</button>
+                    <button onclick="display('3')" id="3">3</button>
+                    <button onclick="display('+')" id="add">+</button>
                     <button onclick="display('.')">.</button>
                     <button onclick="display('0')">0</button>
-                    <button onclick="cal()" class="equal">=</button>
+                    <button onclick="cal()" class="equal" id="equal">=</button>
         </div>
     </div>    
 </body>
-<script src="cal.js" > 
-
-</script>
+<script src="cal.js" > </script>
+<script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
 </html>

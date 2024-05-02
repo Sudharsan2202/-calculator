@@ -1,11 +1,11 @@
-let outputScreen =document.getElementById("output-screen");
+let result =document.getElementById("result");
 function display(num){
-   outputScreen.value += num;
+   result.value += num;
 }
 
 function cal(){
     try{
-       outputScreen.value =  eval(outputScreen.value);
+      result.value =  eval(result.value);
    }
     catch(err)
  {
@@ -13,8 +13,8 @@ function cal(){
     }
 }
 function cl(){
-   outputScreen.value = "";
+   result.value = "";
 }
 function del(){
-    outputScreen.value = outputScreen.value.slice(0,-1);
+   result.value = result.value.slice(0,-1);
 }
